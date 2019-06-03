@@ -9,9 +9,16 @@ function setCart(c) {
   return cart;
 }
 
+// function that creates a product object with the item's name and price(price is randomly generated between $0-100)
+
 function addToCart(item) {
- // write your code here
+  const price = Math.floor(Math.random() * 100);
+  cart.push({ [item]: price });
+
+  console.log(`${item} has been added to your cart.`);
+  return cart;
 }
+
 
 function viewCart() {
   // write your code here
